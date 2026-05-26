@@ -29,7 +29,7 @@ void Train::addCar(bool light) {
   countCar++;
 }
 
-int Train::getLenght() {
+int Train::getLength() {
   if (!head) throw "TRAIN IS EMPTY";
   if (countCar < 2) throw "TRAIN IS TOO SHORT";
   countOp = 0;
