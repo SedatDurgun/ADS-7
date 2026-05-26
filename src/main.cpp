@@ -28,13 +28,13 @@ int main() {
     sizes.push_back(n);
     {
       Train* t = buildTrain(n, 0);
-      t->getLenght();
+      t->getLength();
       opsOff.push_back(t->getOpCount());
       delete t;
     }
     {
       Train* t = buildTrain(n, 1);
-      t->getLenght();
+      t->getLength();
       opsOn.push_back(t->getOpCount());
       delete t;
     }
@@ -42,7 +42,7 @@ int main() {
       int64_t total = 0;
       for (int r = 0; r < REPEATS; ++r) {
         Train* t = buildTrain(n, 2);
-        t->getLenght();
+        t->getLength();
         total += t->getOpCount();
         delete t;
       }
