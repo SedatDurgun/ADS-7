@@ -16,6 +16,6 @@ class Train {
   Train();
   ~Train();
   void addCar(bool light);
-  int getLenght();
+  int getLength();
   int getOpCount() const;
 };
