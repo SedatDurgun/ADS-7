@@ -56,6 +56,5 @@ int main() {
       f << sizes[i] << "," << opsOff[i] << ","
         << opsOn[i] << "," << opsRand[i] << "\n";
   }
-  system("python result/plot.py");
   return 0;
 }
